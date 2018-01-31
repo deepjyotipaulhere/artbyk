@@ -2,7 +2,9 @@
   <div>
     <Header></Header>
       <div style="min-height:50vh;" class="container">
-        <router-view></router-view>
+        <div class="grey lighten-2">
+          <router-view></router-view>
+        </div>
       </div>
     <Footer></Footer>
   </div>
