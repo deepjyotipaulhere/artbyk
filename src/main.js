@@ -9,6 +9,7 @@ import Oil from './Oil.vue'
 import Quil from './Quil.vue'
 import Ear from './Ear.vue'
 import Glass from './Glass.vue'
+import View from './View.vue'
 
 Vue.use(VueRouter);
 Vue.use(VueResource);
@@ -19,6 +20,7 @@ const routes=[
   {path:'/quil',  component:Quil},
   {path:'/glass', component:Glass},
   {path:'/ear',   component:Ear},
+  {path:'/view/:id', component:View},
 ];
 
 const router=new VueRouter({
