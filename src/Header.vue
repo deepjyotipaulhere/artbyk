@@ -1,5 +1,5 @@
 <template>
-  <nav> 
+  <nav>
     <div class="nav-wrapper white">
       <a href="#" class="brand-logo"><img src="src/assets/artbyk.png" class="responsive-img" /></a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
@@ -15,6 +15,6 @@
 
 <script>
 export default {
-  
+
 }
 </script>
