@@ -11,13 +11,16 @@
         <div class="card col s12 m3" v-for="x in news">
           <div class="card-image">
             <img src="http://images.all-free-download.com/images/graphiclarge/beautiful_scenery_05_hd_picture_166257.jpg">
-            <span class="card-title">{{x.title}}</span>
+            
           </div>
           <div class="card-content">
+            <span class="card-title">{{x.title}}</span>
             <p>{{x.subtitle}}</p>
+            <p>Size available: <span style="font-weight:bolder">{{x.size}}</span></p>
+            <h4 style="text-align:right">&#8377; {{x.price}}</h4>
           </div>
           <div class="card-action">
-            <a href="#">This is a link</a>
+            <router-link :to="{path:'/view/'+x.id}" class="btn blue btn-block">View</router-link>
           </div>
         </div>
     </div>

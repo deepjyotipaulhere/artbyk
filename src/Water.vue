@@ -20,7 +20,7 @@
             <h4 style="text-align:right">&#8377; {{x.price}}</h4>
           </div>
           <div class="card-action">
-            <a href="#">This is a link</a>
+            <router-link :to="{path:'/view/'+x.id}" class="btn blue btn-block">View</router-link>
           </div>
         </div>
     </div>
