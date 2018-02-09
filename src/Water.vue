@@ -1,8 +1,9 @@
 <template>
   <div>
-  <div class="grey lighten-3">
-    <div class="container" style="padding-top:5vh;padding-bottom:5vh;">
-      <h3>Watercolors</h3>
+  <div class="" style="background-image:url('http://www.dailyfreepsd.com/wp-content/uploads/2013/09/atlantic-blurred-background.jpg');background-size:cover;
+    background-position:center">
+    <div class="container" style="padding-top:10vh;padding-bottom:10vh;">
+      <h3 class="white-text">Watercolors</h3>
     </div>
   </div>
 
@@ -17,7 +18,7 @@
             
             <p>{{x.subtitle}}</p>
             <p>Size available: <span style="font-weight:bolder">{{x.size}}</span></p>
-            <h4 style="text-align:right">&#8377; {{x.price}}</h4>
+            <h4 style="text-align:right;font-weight:bolder">&#8377; {{x.price}}</h4>
           </div>
           <div class="card-action">
             <router-link :to="{path:'/view/'+x.id}" class="btn blue btn-block">View</router-link>

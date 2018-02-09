@@ -21,6 +21,7 @@ def getArt(artid):
         d["subtitle"]=c[2]
         d["price"]=c[3]
         d["size"]=c[4]
+        d["view"]=c[7]
         res.append(d)
     j=jsonify(res)
     con.close()
@@ -41,11 +42,22 @@ def getArtType(atype):
         d["subtitle"]=c[2]
         d["price"]=c[3]
         d["size"]=c[4]
+        d["view"]=c[7]
         res.append(d)
     j=jsonify(res)
     con.close()
     j.headers.add('Access-Control-Allow-Origin','*')
     return j
 
+@app.route("/views/<id>")
+def getViews(id):
+    con=mdb.connect("localhost","root","1234","artbyk")
+    cur=con.cursor()
+    cur.execute("UPDATE arts SET view=view+1 WHERE id="+id)
+    con.commit()
+    j=jsonify({})
+    j.headers.add('Access-Control-Allow-Origin','*')
+    return j
+    
 if __name__=="__main__":
     app.run()

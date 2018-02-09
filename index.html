@@ -3,17 +3,24 @@
   <head>
     <meta charset="utf-8">
     <title>artbyk</title>
-    <link href="https://fonts.googleapis.com/css?family=Raleway|Rammetto+One|Roboto:300|Abril+Fatface" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.3/css/materialize.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <style>
+      @font-face {
+        font-family: "RobotoNormal";
+        src: url('/src/assets/fonts/Roboto-Light.woff');
+      }
+      @font-face {
+        font-family: "RobotoThin";
+        src: url('/src/assets/fonts/Roboto-Thin.woff');
+      }
+
       h1,h2,h3,h4,h5,h6{
-        font-family: 'Abril Fatface';
+        font-family: 'RobotoThin';
         margin: 0;
       }
       *{
-        font-family: 'Roboto';
+        font-family: 'RobotoNormal';
       }
     </style>
   </head>
@@ -23,10 +30,10 @@
     <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.3/js/materialize.min.js"></script>
     <script src="/dist/build.js"></script>
-    <script>
+    <!-- <script>
       $(document).ready(function(){
         $('.collapsible').collapsible();
       });
-    </script>
+    </script> -->
   </body>
 </html>

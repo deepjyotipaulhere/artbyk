@@ -1,8 +1,9 @@
 <template>
   <div>
-    <div class="grey lighten-3">
-      <div class="container" style="padding-top:5vh;padding-bottom:5vh;">
-        <h3>Quillings</h3>
+    <div class="" style="background-image:url('http://www.dailyfreepsd.com/wp-content/uploads/2013/09/atlantic-blurred-background.jpg');background-size:cover;
+    background-position:center">
+      <div class="container" style="padding-top:10vh;padding-bottom:10vh;">
+        <h3 style="font-weight:lighter;" class="white-text">Quillings</h3>
       </div>
     </div>
 

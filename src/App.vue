@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="grey lighten-3">
     <hr style="margin:0;padding:0">
     <Header></Header>
       <div style="min-height:50vh;">
